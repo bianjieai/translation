@@ -1,11 +1,11 @@
-### Tendermint BFT Stack
-
-Bitcoin is the intellectual ancestor of all blockchain-based cryptographic systems that we know and love today. The Tendermint protocol shares commonality with Bitcoin inasmuch as the two protocols record everything on a blockchain, yet they each provide their unique solutions to the Byzantine General’s Problem, also referred to as the consensus, or “agreement”, problem. Tendermint’s lineage is closely traced back to the world of distributed computing and Byzantine Fault Tolerance (BFT) literature in academia (e.g., see Ethan Buchman’s [thesis](https://atrium.lib.uoguelph.ca/xmlui/bitstream/handle/10214/9769/Buchman_Ethan_201606_MAsc.pdf)). Whereas in the Bitcoin genesis story, after the many failed attempts of previous electronic cash systems — with the exception of PayPal — Bitcoin rose above the ashes as a censorship-resistant decentralized currency system.
-
-The Bitcoin protocol optimizes for censorship-resistance, critically, due to its primary function as a payment system. Tendermint, on the other hand, optimizes for general Byzantine fault-tolerant distributed applications and data processing amidst a wide area network (WAN), e.g. hundreds of nodes (high node count). This distinction is nuanced and merits deeper investigation.
-
-For context, in the world of academia, there had been very little research done on BFT systems for WAN and only for a small number of nodes — 4 to 7 at maximum — and always for a single administrative domain. As for BFT systems for WAN with a large number of nodes and for multiple administrative domains, no significant body of work has been widely adopted in practice.
-
-Before 2009, when Bitcoin introduced a paradigm-shifting technology — the concept of a blockchain — to the world, the consensus problem in a WAN setting for high node counts was left largely unanswered. Despite solving the Two Generals’ problem, however, Bitcoin was not really an algorithm to solve consensus, in the purely theoretical sense in the research area of distributed systems. Furthering the work in the BFT domain was far from done.
-
-In 2014, Jae Kwon, coming from a computer science and systems engineering background, envisioned a purely BFT-based protocol which would scale to the tune of hundreds of nodes in the permissionless setting with Proof-of-Stake (PoS) as the underlying security mechanism. And so [Tendermint](https://tendermint.com/static/docs/tendermint.pdf) was created. Consequently, this system model designed with PoS as the primary security mechanism over a large number of validating nodes in a WAN turned out to be a significantly complex engineering endeavor, taking almost 4 years to implement in the public blockchain setting. That setting is Cosmos, slated to launch this summer in 2018.
+### Tendermint拜占庭容错堆栈
+ 
+比特币是我们当今所熟知并热爱的所有基于区块链的加密通信系统的技术鼻祖。Tendermint协议与比特币的协议有共同之处，即两者都将所有信息记录到区块链上，但是对于拜占庭将军的问题，两者则尤其不同的独特解决方案或者说叫共识或者约定。Tendermint的根源来自于学术界中分布计算及拜占庭容错方面的文学著作当中 (例如 Ethan Buchman’s [thesis](https://atrium.lib.uoguelph.ca/xmlui/bitstream/handle/10214/9769/Buchman_Ethan_201606_MAsc.pdf)). 而比特币则是做为创世纪的抵抗中心审查的去中心化货币系统，从之前多次（Paypal除外）电子化现金系统的失败尝试的灰烬中升起的。
+ 
+比特币的协议关键优化了对于中心审查的抵抗，因比特币的主要作用是支付系统。而反观Tendermint，则是为了在广域网（WAN）中大多数的拜占庭容错下的分布式应用及数据处理而优化，如对几百个节点（高结点计数）的优化。两者差别微妙，值得深入研究。
+ 
+目前的学术界内对于广域网中的拜占庭容错系统研究甚少，且都是针对单管理域，少量节点-4-7个节点这样的网络的研究。对于广域网中的多管理域，大量节点这样的拜占庭容错系统的网络的研究，并没有被普遍应用的研究成果。
+ 
+在2009年比特币为世界带来那个重新定义一切的技术，即区块链这个理论之前，对于广域网中高节电数量的共识问题基本上没有解决方案。尽管解决了拜占庭两位将军的难题，但从分布式系统研究领域的纯粹理论意义上来说，比特币的算法其实并不是解决共识问题的算法。拜占庭容错这个论题上，还有很长的路要走。
+ 
+2014年，有着计算机科学及系统工程学背景的Jae Kwon设想了一个纯粹的基于拜占庭容错的协议，该协议支持可扩展到数百个的节点在POS机制作为底层安全机制下以无许可设定的网络正常运行。至此， [Tendermint](https://tendermint.com/static/docs/tendermint.pdf) 诞生了. 而这个在广域网中高节电数量的，以POS机制最为主要安全机制的系统设计模型随后被证实是一个极为复杂的工程项目，花了将近四年才将其公共区块链主网部署好，这个公网就是Cosmos，计划在2018年夏上线。
