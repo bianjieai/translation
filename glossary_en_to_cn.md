@@ -11,6 +11,8 @@ Angel Investment/Round：天使投资/轮
 
 Anonymous：匿名的
 
+Amino 是编码格式
+
 Anti-spam measures ：反垃圾交易措施
 
 Application Layer: 应用层
